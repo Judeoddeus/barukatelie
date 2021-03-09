@@ -1,5 +1,5 @@
 // Início do banner rotativo
-let fotos = ["banner-verao.jpg", "banner-inverno.jpg", "banner-primavera.jpg", "banner-outono.jpg"];
+let fotos = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
 
 
 function TrocarFoto(foto){
