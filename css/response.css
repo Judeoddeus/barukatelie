@@ -1,0 +1,33 @@
+@media (min-width: 300px) and (max-width:1040px){
+    
+    body{
+        background-color:#f1eeee;
+    }
+    .painel-icones{
+        display: none;
+    }
+    
+    .logo{
+        width: 200px;
+        
+    }
+    .faixa-lateral {
+       background-color: transparent;
+    }
+}  
+
+ @media (max-width:900px){
+    .painel-icones, .linha-imagem-destacada{
+        display: none;
+    }
+    
+    
+}
+
+@media (ax-width: 360px)    {
+    .formulario{
+        margin-left: 0;
+      
+     }
+}
+ 

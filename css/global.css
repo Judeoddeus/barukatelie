@@ -1,0 +1,18 @@
+.button {
+    text-transform: lowercase;
+    font-weight: 600;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.button:hover{
+    background-color: var(--primary);
+    border-color: transparent;
+}
+
+.button-primary{
+    background-color: var(--primary);
+    
+}
