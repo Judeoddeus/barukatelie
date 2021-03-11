@@ -16,7 +16,7 @@ setInterval(function(){
     }
 
     TrocarFoto(fotoAtual);
-}, 3000);
+}, 5000);
 
 // Fim
 
