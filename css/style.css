@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
 
 body,
 html{
@@ -51,25 +57,32 @@ html{
 /* *****************Seção HOME ******************** */
 #home{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    margin-left: 20px;
+    margin-top: 10px;
     
 }
-
 .container-home {
-    height: 500px;
+    height: 100vh;
 }
 
-.texto-destaque h1, h4 {
+.texto-destaque h4 {
     text-align: left;
-    padding: 15px;
+    padding:20px;
     font-size: 16px;
     
 }
 
 .texto-destaque h1{
-    font-size: 55px;
+    font-size: 70px;
+    padding:20px;
 }
 .imagem-destaque {
-    width: 70%;
+    width: 85%;
 }
 .linha-imagem-destacada{
     background: #383a2f;
@@ -92,7 +105,7 @@ html{
     width: 22px;
     text-align: center;
     position: absolute;
-    right: 23%;
+    right: 19%;
     top: 450px;
 }
 
@@ -100,8 +113,19 @@ html{
     margin: 10px 0;
 }
 
+#contatos h3{
+    
+    padding: 20px 0;
+}
+#contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-
+#contatos img{
+    width: 15px;
+}
 /* ******************Seção Pra você **********************/
 
 .gallery-content{
@@ -127,9 +151,6 @@ html{
     width: 50%;
     outline: 5px solid #fff;
 }
-.gallery-content__large {
-    height: 100%;
-}
 
 img {
     
@@ -140,6 +161,8 @@ img {
 .logo-galeria img{
     padding-top: 200px;
 }
+
+
 /* ***********Seção Meu closet **************** */
 
 /* Deixando o layout ao lado do outro usando display: flex */
@@ -149,7 +172,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 750px;
    
    
 }
@@ -329,43 +352,8 @@ img {
     text-transform: capitalize;
 }
 
-/* ************Seção Contatos********** */
+/* ********************Seção Localização **************** */
 
-.col-direita h4{
-   
-    margin-bottom: 20px;
-    top: 90px;
-   
-    font-size: 1.8em;
-    font-weight: 600;
-}
-
-.txt-icone1, .txt-icone2 {
-    font-size: 12px;
-    
-}
-
-.formulario{
-   margin-left: 150px;
-   padding-bottom: 20px;
-}
-
-.form-group{
-    font-size: 10px;
-    padding-bottom: 150px;
-}
-#nome, 
-#email, 
-#assunto,
-textarea{
-    display: flex;
-    margin-bottom: 20px;
-    border:none;
-    background: none;
-    border-bottom: 1px solid #ccc;
-    padding: 0.5em;
-    width: 50%;
-}
 
 /* ********************Seção Sobre **************** */
 
@@ -376,7 +364,14 @@ textarea{
 }
 #sobre {
     padding-bottom: 100px;
+    
 }
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
 /* ***************Footer*************** */
 .container footer {
     overflow: hidden;
