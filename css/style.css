@@ -87,7 +87,7 @@ html{
 .linha-imagem-destacada{
     background: #383a2f;
     height: 7px;
-    width: 185px;
+    max-width: 185px;
     margin-top: 40px;
     margin-left: 300px;
     display: flex;
@@ -102,30 +102,19 @@ html{
     
 }
 .painel-icones{
-    width: 22px;
-    text-align: center;
-    position: absolute;
-    right: 19%;
-    top: 450px;
+    width: 30px;
+    text-align: center;    
+    top: 500px;
 }
 
-.redes-sociais img{
-    margin: 10px 0;
-}
-
-#contatos h3{
-    
-    padding: 20px 0;
-}
-#contatos {
+.redes-sociais {
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
-
-#contatos img{
+.redes-sociais img{
+    margin: 10px 15px;
     width: 15px;
 }
+
 /* ******************Seção Pra você **********************/
 
 .gallery-content{
