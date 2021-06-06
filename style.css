@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body,
+html{
+    font-family: 'Open Sans', sans-serif;
+    
+   
+}
+.faixa-lateral{
+    background-color: #555;
+   
+}
+.container{
+    background-color: #f1eeee;
+}
+
+
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+    
+}
+
+#header .navbar-collapse {
+    width: auto;
+    
+}
+
+#header .nav-link {
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000;
+    border-bottom: solid 1px transparent;
+}
+
+#header .nav-link:hover{
+    border-bottom:  solid 1px var(--primary);
+} 
+
+.logo-home img {
+    padding-top: 20px;
+}
+
+/* *****************Seção HOME ******************** */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.container-home {
+    height: 100vh;
+}
+
+.texto-destaque h4 {
+    text-align: left;
+    padding:20px;
+    font-size: 16px;
+    
+}
+
+.texto-destaque h1{
+    font-size: 70px;
+    padding:20px;
+}
+.imagem-destaque {
+    width: 85%;
+}
+.linha-imagem-destacada{
+    background: #383a2f;
+    max-height: 7px;
+    width: 185px;
+    margin-top: 40px;
+    margin-left: 300px;
+    display: flex;
+}
+
+.linha-imagem-destacada span{
+    background: #383a2f;
+    height: 7px;
+    width: 9px;
+    position: relative;
+    right: 20px;
+    
+}
+.painel-icones{
+    width: 22px;
+    text-align: center;    
+    top: 500px;
+}
+.redes-sociais {
+    display: flex;
+}
+.redes-sociais img{
+    margin: 10px 15px;
+    width: 15px;
+}
+.redes-sociais img{
+    margin: 10px 0;
+}
+
+#contatos h3{
+    
+    padding: 20px 0;
+}
+#contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contatos img{
+    width: 15px;
+}
+/* ******************Seção Pra você **********************/
+
+.gallery-content{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    max-width: 1040px;
+    width: 94%;
+}
+.gallery-content__item {
+    width: 30%;
+}
+.gallery-content__item:nth-child(2) {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-content__small {
+    width: 50%;
+    outline: 5px solid #fff;
+}
+
+img {
+    
+    max-width: 100%;
+    display: block;
+}
+
+.logo-galeria img{
+    padding-top: 200px;
+}
+
+
+/* ***********Seção Meu closet **************** */
+
+/* Deixando o layout ao lado do outro usando display: flex */
+
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+   
+   
+}
+
+.content-login{
+    background-color: #fff;
+    border: solid 1px rgba(235, 231, 231, 0.822);
+    border-radius:15px ;
+    width: 90%;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* Pseudo Elemento */
+.content-login::before{
+    content:"";
+    position: absolute;
+    background-color: #d8107e;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    left: 0;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+.title-primary{
+    color: #fff;
+}
+.title-second{
+    color: #d8107e;
+}
+
+
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+}
+
+.description-primary{
+    color: #fff;
+}
+
+.description-second{
+    color: #888;
+}
+
+.btn-primary{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #d8107e;
+}
+
+.btn-second{
+    color: #fff;
+    background-color: #d8107e;
+    border: 1px solid #d8107e;
+    transition: background-color 0.5s;
+    
+}
+.btn-second:hover{
+    background-color: #fff;
+    color: #d8107e;
+    border: 1px solid #d8107e;
+}
+.first-content {
+    display: flex;
+}
+.first-content .second-column {
+    z-index: 11;
+}
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media{
+    margin:1rem 0;
+}
+/* Pseudo class para zerar a margin left, apenas do primeiro icone */
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.item-social-media:hover {
+    color: white;
+    background-color: #d8107e;
+    border-color: #d8107e;
+}
+.item-social-media{
+    transition: background-color 0.5s;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #aaa;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;  /*muda o valor da direção do flex */
+    width: 55%;
+    
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    width: 100%;
+}
+
+.label-input{
+    background-color: transparent;
+    border-bottom: #d8107e 1px solid;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icone{
+    color: #d8107e;
+    padding: 0 8px;
+}
+/* Second Content */
+.second-content{
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+.password{
+    color: #d8107e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter{
+    text-transform: capitalize;
+}
+
+/* ********************Seção Localização **************** */
+
+
+/* ********************Seção Sobre **************** */
+
+.p-sobre{
+    color: #222;
+    margin-top: 50px ;
+    line-height: 25px;
+}
+#sobre {
+    padding-bottom: 100px;
+    
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+/* ***************Footer*************** */
+.container footer {
+    overflow: hidden;
+    background: #353232;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+    
+}
+
+.bold-text {
+    color: #989c9e !important
+}
+
