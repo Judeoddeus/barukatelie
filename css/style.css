@@ -102,7 +102,7 @@ html{
     
 }
 .painel-icones{
-    width: 22px;
+    width: 30px;
     text-align: center;    
     top: 500px;
 }
@@ -110,26 +110,14 @@ html{
     display: flex;
 }
 .redes-sociais img{
-    margin: 10px 15px;
+    margin: 10px 20px;
     width: 15px;
 }
 .redes-sociais img{
-    margin: 10px 0;
+    margin: 10px 20px;
 }
 
-#contatos h3{
-    
-    padding: 20px 0;
-}
-#contatos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-#contatos img{
-    width: 15px;
-}
 /* ******************Seção Pra você **********************/
 
 .gallery-content{
