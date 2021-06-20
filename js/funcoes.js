@@ -24,3 +24,4 @@ setInterval(function(){
 // Animação da galeria
 $('#gallery a').lightBox();
 // fim
+

@@ -14,6 +14,14 @@
     .faixa-lateral {
        background-color: transparent;
     }
+
+    .imagem-destaque {
+        width: 100%;
+    }
+    .button{
+        margin-left: 20px;
+        margin: 15px 0;
+    }
 }  
 
  @media (max-width:900px){
@@ -24,11 +32,11 @@
     
 }
 
-@media (ax-width: 360px)    {
+@media (max-width: 360px)    {
     .formulario{
         margin-left: 0;
       
      }
+     
 }
  
-/* teste de commit */
