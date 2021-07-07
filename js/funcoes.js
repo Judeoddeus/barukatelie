@@ -24,3 +24,12 @@ setInterval(function(){
 // Animação da galeria
 $('#gallery a').lightBox();
 // fim
+
+
+
+$(document).ready(function() { 
+  $('#loginModal').modal('show');
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+});
