@@ -89,24 +89,7 @@ html {
 .imagem-destaque {
     width: 85%;
 }
-/* 
-.linha-imagem-destacada {
-    background: #383a2f;
-    max-height: 7px;
-    width: 170px;
-    margin-top: 40px;
-    margin-left: 300px;
-    display: flex;
-} */
-/* 
-.linha-imagem-destacada span {
-    background: #383a2f;
-    height: 7px;
-    width: 9px;
-    position: relative;
-    right: 20px;
 
-} */
 
 .painel-icones {
     width: 30px;
@@ -127,7 +110,16 @@ html {
     margin: 10px 20px;
 }
 
+.login-modal{
+    font-size:10px;
+    color: #fff;
+  
+}
 
+.login {
+    color: #d8107e;
+    text-decoration: none;
+}
 /* ******************Seção Pra você **********************/
 
 .gallery-content {
@@ -169,6 +161,37 @@ img {
 
 
 /* ***********Seção Meu closet **************** */
+@media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 400px;
+    }
+    .modal-dialog .modal-content {
+      padding: 1rem;
+    }
+  }
+  .modal-header .close {
+    margin-top: -1.5rem;
+  }
+   
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+   
+  .btn-round {
+    border-radius: 3rem;
+  }
+   
+  .delimiter {
+    padding: 1rem;
+  }
+   
+  .social-buttons .btn {
+    margin: 0 0.5rem 1rem;
+  }
+   
+  .signup-section {
+    padding: 0.3rem 0rem;
+  }
 
 /* Deixando o layout ao lado do outro usando display: flex */
 
@@ -216,7 +239,7 @@ img {
     color: #fff;
 }
 
-.title-second {
+.title-second{
     color: #d8107e;
 }
 
@@ -236,12 +259,21 @@ img {
     color: #888;
 }
 
-.btn-primary {
-    background-color: transparent;
+.btn-login {
     color: #fff;
-    border: 1px solid white;
-    cursor: pointer;
-    transition: background-color .5s;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-login:hover{
+    color: #d8107e;
+    background-color: #fff;
+}
+.btn-primary {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: background-color 0.5s;
 }
 
 .btn-primary:hover {
@@ -374,7 +406,7 @@ img {
     text-transform: capitalize;
 }
 
-/* ********************Seção Localização **************** */
+
 
 
 /* ********************Seção Sobre **************** */
@@ -408,4 +440,9 @@ img {
 
 .bold-text {
     color: #989c9e !important
+}
+
+/* Página medidas */
+.tb-medidas {
+    font-size: 12px;
 }

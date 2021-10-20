@@ -125,9 +125,7 @@ CREATE TABLE `cadastro_medidas_cliente` (
   `id_login_cliente` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `cadastro_medidas_cliente` (`id`, `nome`, `busto`, `cintura`, `quadril`, `ombro_a_ombro`, `ombro`, `colarinho`, `entre_cavas_frente`, `centro _frente`, `entre_cavas_costas`, `centro_costas`, `alt_busto`, `separacao_do_busto`, `alt_frente`, `alt_costa`, `alt_quadril`, `alt_gancho`, `alt_gancho_frente`, `alt_gancho_costa`, `alt_cintura_ao_joelho`, `alt_cint_ao_tornozelo`, `largura_joelho`, `cumprimento_braco`, `larg_braco`, `punho`, `alt_manga3_4`, `alt_manga_curta`, `alt_desejada_da_saia`, `id_login_cliente`) VALUES
-(1, 'Juliana Oliveira', 98, 88, 109, 30, 12, 20, 17, 50, 50, 23, 25, 10, 15, 20, 30, 15, 12, 12, 50, 30, 21, 32, 10, 8, 26, 30, 80, 27);
-
+INSERT INTO `cadastro_medidas_cliente` (`id`, `nome`, `busto`, `cintura`, `quadril`, `ombro_a_ombro`, `ombro`, `colarinho`, `entreCavasFrt`, `centroFrt`, `entreCavasCst`, `centroCst`, `alt_busto`, `separacaoBusto`, `alt_frente`, `alt_costa`, `alt_quadril`, `alt_gancho`, `alt_ganchoFrt`, `alt_ganchoCst`, `alt_cintJoelho`, `alt_cintTorno`, `largJoelho`, `cumpBraco`, `largBraco`, `punho`, `alt_manga3_4`, `alt_mangaCurta`, `alt_saia`, `id_login_cliente`) VALUES ('65', 'Juliana', '98', '76', '100', '25', '12', '21', '30', '50', '20', '30', '20', '8', '25', '25', '63', '85', '15', '56', '80', '50', '23', '92', '13', '8', '96', '35', '68', '65');
 
 ALTER TABLE `cadastro_medidas_cliente`
   ADD PRIMARY KEY (`id`),

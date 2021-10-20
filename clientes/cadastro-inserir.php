@@ -2,7 +2,7 @@
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$senha = filter_input(INPUT_POST, 'password');
+$senha = $_POST['password'];
 $telefone = $_POST['telefone'];
 
 include "../includes/conexao.php";
@@ -20,7 +20,7 @@ $resultado = mysqli_query($conexao, $sqlInserir);
 
 if($resultado){
     echo"<script type = 'text/javascript'> alert('Cadastro realizado com sucesso') </script>";
-    echo "<script type = 'text/javascript'>window.location.href = 'clientes/medidas.php'</script>";
+    echo "<script type = 'text/javascript'>window.location.href = area-usuario.php'</script>";
 }else{
     echo "Algum erro aconteceu.";
    
