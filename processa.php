@@ -1,9 +1,9 @@
 <?php
 session_start();
+include "includes/conexao.php";
+
 $estrela = $_POST['estrela'];
 
-
-include "includes/conexao.php";
 if(!empty($_POST['estrela'])){
 	$estrela = $_POST['estrela'];
 	

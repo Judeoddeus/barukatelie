@@ -113,16 +113,6 @@ html {
 .dp-modal {
     font-size: 10px;
     color: #fff;
-<<<<<<< HEAD
-
-}
-
-=======
-
-}
-
->>>>>>> 39274060ee3b9d9dd681d65e8e024d599159da03
-.dp{
     color: #d8107e;
     text-decoration: none;
 }
@@ -165,12 +155,11 @@ img {
 .logo-galeria img {
     padding-top: 200px;
 
-
+}
 
 /* ***********Seção Meu closet **************** */
 /* Avaliaçãoes e comentários */
 
-<<<<<<< HEAD
 .estrelas input[type=radio]{
 	display: none;
    
@@ -180,15 +169,6 @@ img {
 	color: #FC0;
 }
 .estrelas  input[type=radio]:checked  ~ label i.fa:before{
-=======
-.first-column .estrelas input[type=radio]{
-	display: none;
-   
-}.estrelas label i.fa:before{
-	content: '\f005';
-	color: #FC0;
-}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
->>>>>>> 39274060ee3b9d9dd681d65e8e024d599159da03
 	color: #CCC;
 }
 
@@ -196,12 +176,9 @@ img {
     padding-bottom: 12px;
 }
 
-<<<<<<< HEAD
 .estrelas-img img{
    margin: 0 auto;
 }
-=======
->>>>>>> 39274060ee3b9d9dd681d65e8e024d599159da03
 /* Slides de comentários */
 .carousel {
     text-align: center;
@@ -213,7 +190,6 @@ img {
     width:50%;
     margin: 0 auto;
 }
-<<<<<<< HEAD
 
 /* fim */
 @media (min-width: 576px) {
@@ -246,40 +222,6 @@ img {
     margin: 0 0.5rem 1rem;
 }
 
-=======
-
-/* fim */
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 400px;
-    }
-
-    .modal-dialog .modal-content {
-        padding: 1rem;
-    }
-}
-
-.modal-header .close {
-    margin-top: -1.5rem;
-}
-
-.form-title {
-    margin: -2rem 0rem 2rem;
-}
-
-.btn-round {
-    border-radius: 3rem;
-}
-
-.delimiter {
-    padding: 1rem;
-}
-
-.social-buttons .btn {
-    margin: 0 0.5rem 1rem;
-}
-
->>>>>>> 39274060ee3b9d9dd681d65e8e024d599159da03
 .signup-section {
     padding: 0.3rem 0rem;
 }
@@ -423,13 +365,8 @@ img {
     order: 1;
     z-index: -1;
 }
-<<<<<<< HEAD
 
 
-=======
-
-
->>>>>>> 39274060ee3b9d9dd681d65e8e024d599159da03
 
 /* ********************Seção Sobre **************** */
 
