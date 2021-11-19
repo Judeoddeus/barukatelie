@@ -164,13 +164,15 @@ img {
 /* ***********Seção Meu closet **************** */
 /* Avaliaçãoes e comentários */
 
-.first-column .estrelas input[type=radio]{
+.estrelas input[type=radio]{
 	display: none;
    
-}.estrelas label i.fa:before{
+} 
+ .estrelas label i.fa:before{
 	content: '\f005';
 	color: #FC0;
-}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+}
+.estrelas  input[type=radio]:checked  ~ label i.fa:before{
 	color: #CCC;
 }
 
@@ -178,6 +180,9 @@ img {
     padding-bottom: 12px;
 }
 
+.estrelas-img img{
+   margin: 0 auto;
+}
 /* Slides de comentários */
 .carousel {
     text-align: center;

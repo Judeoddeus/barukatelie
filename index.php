@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baruk Ateliê</title>
-  
+
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -130,41 +133,12 @@
                 <p class="dp-modal">Ajude-nos a melhorar deixando aqui sua avaliação.</p>
 
                 <!-- ínicio das avaliações -->
-                <div class="avaliacao">
-
-                  <?php
-                  if (isset($_SESSION['msg'])) {
-                    echo $_SESSION['msg'];
-                    unset($_SESSION['msg']);
-                  }
-                  ?>
-                  <!-- formulário de avaliações -->
-                  <form action="processa.php" method="post" enctype="multipart/form-data">
-                    <div class="estrelas">
-                      <input type="radio" id="vazio" name="estrela" value="" checked>
-
-                      <label for="estrela_um"><i class="fa"></i></label>
-                      <input type="radio" id="estrela_um" name="estrela" value="1">
-
-                      <label for="estrela_dois"><i class="fa"></i></label>
-                      <input type="radio" id="estrela_dois" name="estrela" value="2">
-
-                      <label for="estrela_tres"><i class="fa"></i></label>
-                      <input type="radio" id="estrela_tres" name="estrela" value="3">
-
-                      <label for="estrela_quatro"><i class="fa"></i></label>
-                      <input type="radio" id="estrela_quatro" name="estrela" value="4">
-
-                      <label for="estrela_cinco"><i class="fa"></i></label>
-                      <input type="radio" id="estrela_cinco" name="estrela" value="5">                      
-                      
-                    </div>
-                    <button type="button" class="btn btn-dp" data-toggle="modal" data-target="#dpModal">Avaliar</button>
-                  </form>
-                </div>               
-                
+                <div class="estrelas-img">
+                  <img src="images/stars.png" alt="estrelas de avaliação">
+                </div>
+                <button type="button" class="btn btn-dp" data-toggle="modal" data-target="#dpModal">Avaliar</button>
               </div>
-              <!-- fim da avaliação-->
+
 
               <!-- Início do Modal de comentários-->
               <div class="modal fade" id="dpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -179,12 +153,40 @@
                       <div class="form-title text-center">
                         <h4 class="title-second">Deixe seu Comentário</h4>
                       </div>
-                      <div class="d-flex flex-column text-center">
+                      <div class="d-flex flex-column text-center estrelas-modal">
+                        <?php
+                        if (isset($_SESSION['msg'])) {
+                          echo $_SESSION['msg'] . "<br><br>";
+                          unset($_SESSION['msg']);
+                        }
+                        ?>
                         <form method="post" action="processa.php" enctype="multipart/form-data">
                           <div class="form-group">
-                            <input type="text" class="form-control" id="estrela" name="estrela" placeholder="Seu comentário..."><br>
+                            <div class="estrelas">
+                              <input type="radio" id="vazio" name="estrela" value="" checked>
+
+                              <label for="estrela_um"><i class="fa"></i></label>
+                              <input type="radio" id="estrela_um" name="estrela" value="1">
+
+                              <label for="estrela_dois"><i class="fa"></i></label>
+                              <input type="radio" id="estrela_dois" name="estrela" value="2">
+
+                              <label for="estrela_tres"><i class="fa"></i></label>
+                              <input type="radio" id="estrela_tres" name="estrela" value="3">
+
+                              <label for="estrela_quatro"><i class="fa"></i></label>
+                              <input type="radio" id="estrela_quatro" name="estrela" value="4">
+
+                              <label for="estrela_cinco"><i class="fa"></i></label>
+                              <input type="radio" id="estrela_cinco" name="estrela" value="5">
+
+                              <input type="text" class="form-control" id="comentario" name="estrela" placeholder="Seu comentário..."><br>
+
+                              <button type="submit" class="btn btn-second " data-toggle="modal">Cadastrar</button>
+                            </div>
+
                           </div>
-                          <button type="submit" class="btn btn-second " data-toggle="modal">Cadastrar</button>
+
                         </form>
                       </div>
                     </div>
