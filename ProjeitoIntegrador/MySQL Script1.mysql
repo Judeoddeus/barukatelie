@@ -1,0 +1,8 @@
+
+/*select * from `cadastro-cliente`*/
+/* só os nomes que começam com a letra f */
+/* select * from `tb_pacientes` where nome like 'f%' */
+/* só os nomes que terminam com a letra r */
+/* select * from `tb_pacientes` where nome like '%r' */
+/* só os nomes que possuem a letra d em qualquer lugar do nome */
+select * from tb_pacientes
