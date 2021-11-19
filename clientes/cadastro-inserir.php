@@ -2,7 +2,7 @@
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$senha = $_POST['password'];
+$senha = $_POST['senha'];
 $telefone = $_POST['telefone'];
 
 include "../includes/conexao.php";
