@@ -42,10 +42,8 @@
                                 <div class="navbar-nav">
                                 <a class="nav-link" href="../index.php">home</a>
                                 <a class="nav-link" href="../orcamento.php">orçamento</a>
-                                <a class="nav-link" href="../medidas.php">medidas</a>
-                                <a class="nav-link" href="../agendamentos.php">agendamentos</a>
-                                
-                                </div>
+                                <a class="nav-link" href="../medidas.php">medidas</a>                                
+                            </div>
                             </div>    
                         </div>
 
